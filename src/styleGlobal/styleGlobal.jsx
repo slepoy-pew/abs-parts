@@ -24,14 +24,9 @@ const StyleGlobal = createGlobalStyle`
         box-sizing: inherit;
     }
     body {
-        /* max-width: 100vw; */
-		/* min-height: 100vh; */
-		/* max-height: 100vh; */
 		margin: 0;
 		padding: 0;
         background-color: #000;
-		/* background: var(--colorBody1); */
-		/* background: var(--colorBody2); */
     }
 `;
 export default StyleGlobal;

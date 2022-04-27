@@ -37,19 +37,18 @@ const SearchElements = ({ parts }) => {
 
     if (parts) {
         const brandsFiltered = numberSearch
-            ? parts.filter(
-                (part) =>
-                    part.number
-                        .toUpperCase()
-                        .indexOf(numberSearch.toUpperCase()) !== -1
+            ? parts.filter((part) =>
+                part.number
+                    .toUpperCase()
+                    .indexOf(numberSearch.toUpperCase()) !== -1
             )
             : selectedBrand
-                ? parts.filter(
-                    (part) =>
-                        JSON.stringify(part.brand) ===
-                        JSON.stringify(selectedBrand)
-                )
-                : parts;
+    		? parts.filter ((part) =>
+                JSON.stringify(part.brand) ===
+                JSON.stringify(selectedBrand)
+            )
+            : parts
+		;
 
         const count = brandsFiltered.length;
 
@@ -65,41 +64,39 @@ const SearchElements = ({ parts }) => {
         };
 
         return (
-            <div className="page_elements">
-                <div className="elements_grid">
-                    <div className="element filter_brand">
-                        <PartsBrand
-                            onItemSelect={handleBrandsSelect}
-                            selectedItem={selectedBrand}
-                            onClearFilter={clearFilter}
-                        />
-                    </div>
+            <div className="search_elements">
+                <div className="element filter_brand">
+                    <PartsBrand
+                        onItemSelect={handleBrandsSelect}
+                        selectedItem={selectedBrand}
+                        onClearFilter={clearFilter}
+                    />
+                </div>
 
-                    <div className="element input_field">
-                        <input
-                            type="text"
-                            name="numberSearch"
-                            placeholder="Введите номер детали..."
-                            onChange={handleNumberSearch}
-                            value={numberSearch}
-                        />
-                    </div>
+                <div className="element input_field">
+                    <input
+                        type="text"
+                        name="numberSearch"
+                        placeholder="Введите номер детали..."
+                        onChange={handleNumberSearch}
+                        value={numberSearch}
+                    />
+                </div>
 
-                    <div className="element table_parts">
-                        <PartsTable
-                            parts={partsCrop}
-                            onSort={handleSort}
-                            selectedSort={sortBy}
-                        />
-                    </div>
+                <div className="element table_parts">
+                    <PartsTable
+                        parts={partsCrop}
+                        onSort={handleSort}
+                        selectedSort={sortBy}
+                    />
+                </div>
 
-                    <div className="element paginate">
-                        <Pagination
-                            itemsCount={count}
-                            pageSize={pageSize}
-                            onPageChange={handlePageChange}
-                        />
-                    </div>
+                <div className="element paginate">
+                    <Pagination
+                        itemsCount={count}
+                        pageSize={pageSize}
+                        onPageChange={handlePageChange}
+                    />
                 </div>
             </div>
         );

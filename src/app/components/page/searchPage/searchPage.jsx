@@ -13,8 +13,12 @@ const SearchPage = () => {
 
     return (
         <StyledSearchPage>
-            <SearchElements parts={parts} />
-            <BackButton />
+        	<div className="search_container">
+                <div className="search">
+                    <SearchElements parts={parts} />
+                    <BackButton />
+                </div>
+            </div>
         </StyledSearchPage>
     );
 };

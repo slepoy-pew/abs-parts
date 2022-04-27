@@ -71,12 +71,10 @@ export const StyledBurger = styled.div`
         transition: all 0.3s linear;
 
         &:nth-child(1) {
-            transform: ${({ active }) =>
-        active ? "rotate(45deg)" : "rotate(0)"};
+        transform: ${({ active }) => active ? "rotate(45deg)" : "rotate(0)"};
         }
         &:nth-child(2) {
-            transform: ${({ active }) =>
-        active ? "translateX(100%)" : "translateX(0)"};
+            transform: ${({ active }) => active ? "translateX(100%)" : "translateX(0)"};
             opacity: ${({ active }) => (active ? 0 : 1)};
         }
         &:nth-child(3) {

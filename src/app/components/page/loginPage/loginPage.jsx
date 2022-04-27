@@ -19,24 +19,25 @@ const LoginPage = () => {
 
     return (
         <StyledLoginPage>
-            {formType === "register"
-                ?
+            {formType === "register" ? (
                 <>
                     <h2>Registr</h2>
                     <RegisterForm />
-                    <p>Already have account?
+                    <p>
+                        Already have account?
                         <a onClick={toggleFormType}>Sign IN</a>
                     </p>
                 </>
-                :
+            ) : (
                 <>
                     <h2>Login</h2>
                     <LogInForm />
-                    <p>Dont have account?
+                    <p>
+                        Dont have account?
                         <a onClick={toggleFormType}>Sign UP</a>
                     </p>
                 </>
-            }
+            )}
         </StyledLoginPage>
     );
 };
