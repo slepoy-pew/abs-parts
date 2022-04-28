@@ -19,25 +19,29 @@ const LoginPage = () => {
 
     return (
         <StyledLoginPage>
-            {formType === "register" ? (
-                <>
-                    <h2>Registr</h2>
-                    <RegisterForm />
-                    <p>
-                        Already have account?
-                        <a onClick={toggleFormType}>Sign IN</a>
-                    </p>
-                </>
-            ) : (
-                <>
-                    <h2>Login</h2>
-                    <LogInForm />
-                    <p>
-                        Dont have account?
-                        <a onClick={toggleFormType}>Sign UP</a>
-                    </p>
-                </>
-            )}
+			<div className="login_container">
+				<div className="login">
+					{formType === "register" ? (
+						<>
+							<h2>Registr</h2>
+							<RegisterForm />
+							<p>
+								Already have account?
+								<a onClick={toggleFormType}>Sign IN</a>
+							</p>
+						</>
+					) : (
+						<>
+							<h2>Login</h2>
+							<LogInForm />
+							<p>
+								Dont have account?
+								<a onClick={toggleFormType}>Sign UP</a>
+							</p>
+						</>
+					)}
+				</div>
+			</div>
         </StyledLoginPage>
     );
 };
