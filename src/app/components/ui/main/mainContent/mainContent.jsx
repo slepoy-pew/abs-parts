@@ -3,7 +3,7 @@ import { StyledMainContent } from "../../../page/mainPage/stylesMainPage/stylesC
 import { StyledText } from "../../../page/mainPage/stylesMainPage/stylesContent";
 import { StyledLinks } from "../../../page/mainPage/stylesMainPage/stylesContent";
 import { StyledSearchLink } from "../../../page/mainPage/stylesMainPage/stylesContent";
-import { StyledRequestLink } from "../../../page/mainPage/stylesMainPage/stylesContent";
+import { StyledRequestContentLink } from "../../../page/mainPage/stylesMainPage/stylesContent";
 
 const MainContent = () => {
     return (
@@ -31,9 +31,9 @@ const MainContent = () => {
                 <StyledSearchLink to="/search">
                     ПОИСК ПО НОМЕРУ
                 </StyledSearchLink>
-                <StyledRequestLink to="/request">
+                <StyledRequestContentLink to="/request">
                     ЗАПРОС ПО VIN
-                </StyledRequestLink>
+                </StyledRequestContentLink>
             </StyledLinks>
         </StyledMainContent>
     );

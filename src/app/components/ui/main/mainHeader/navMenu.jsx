@@ -1,15 +1,13 @@
 import React from "react";
+import CallOrderBtn from "../../../common/callOrderBtn/callOrderBtn";
 import BurgerMenuBtn from "./burgerMenuBtn";
-import CallOrderBtn from "./callOrderBtn";
 import LoginBtn from "./loginBtn";
 
 const NavMenu = () => {
     return (
         <div className="nav_menu">
             <BurgerMenuBtn />
-
-            <CallOrderBtn />
-
+			<CallOrderBtn />
             <LoginBtn />
         </div>
     );

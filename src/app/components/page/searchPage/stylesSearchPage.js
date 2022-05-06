@@ -18,21 +18,62 @@ const StyledSearchPage = styled.div`
 
     .search {
         border-radius: 6px;
-
-        background: linear-gradient(
-            90deg,
-            rgba(6, 83, 242, 0.2) 0%,
-            rgba(22, 53, 125, 0.4) 25%,
-            rgba(15, 34, 89, 0.6) 50%,
-            rgba(22, 53, 125, 0.4) 75%,
-            rgba(6, 83, 242, 0.2) 100%
+		background: linear-gradient(
+            135deg,
+            rgba(235,237,244, 0.3) 0%,
+            rgba(172,192,241, 0.3) 25%,
+            rgba(172,192,241, 0.4) 50%,
+            rgba(144,172,241, 0.3) 75%,
+            rgba(96,129,201, 0.4) 100%
         );
+    }
+
+	.searchText-one {
+		display: grid;
+    	grid-template: 3fr / 1fr;
+		padding: 2.5rem 0 1.5rem;
+	}
+	.line-one {
+        color: #f49612;
+        letter-spacing: 0.1rem;
+        line-height: 2rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: blue 1px 1px 5px;
+    }
+    @media (max-width: 1370px) {
+        .line-one {
+            font-size: 1.1rem;
+            line-height: 2.2rem;
+        }
+    }
+
+	.searchText-two {
+		display: grid;
+    	grid-template: 3fr / 1fr;
+		padding: 1.5rem 0 0;
+	}
+	.line-two {
+        color: #f49612;
+        letter-spacing: 0.1rem;
+        /* word-spacing: 0.1rem; */
+        line-height: 2rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: blue 1px 1px 5px;
+    }
+    @media (max-width: 1370px) {
+        .line-two {
+            font-size: 1.1rem;
+            line-height: 2.2rem;
+        }
     }
 
     .search_elements {
         width: 58rem;
         margin: 0 auto;
-        /* padding-top: 1rem; */
         border: 1px solid orangered;
 
         display: grid;
@@ -205,16 +246,16 @@ const StyledSearchPage = styled.div`
     }
 
     /* ====== BUTTON-BACK ====== */
-    .back_to_main {
+    /* .back_to_main {
         display: flex;
         justify-content: center;
-    }
-    .back_btn {
+    } */
+    /* .back_btn {
         border: none;
         cursor: pointer;
         padding: 1rem 1.5rem;
         margin: 2rem 0 0;
         font-size: 1.1rem;
-    }
+    } */
 `;
 export default StyledSearchPage;

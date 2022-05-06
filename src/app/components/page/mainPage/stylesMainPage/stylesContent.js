@@ -19,7 +19,7 @@ export const StyledMainContent = styled.div`
 export const StyledText = styled.div`
     padding: 0 0 3rem;
     display: grid;
-    grid-template: 4fr / 1fr;
+    grid-template: 6fr / 1fr;
 
     .line {
         color: #f49612;
@@ -129,7 +129,7 @@ export const StyledSearchLink = styled(Link)`
     }
 `;
 
-export const StyledRequestLink = styled(Link)`
+export const StyledRequestContentLink = styled(Link)`
     margin-left: 16rem;
 
     padding: 2rem 3rem;
