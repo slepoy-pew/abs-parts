@@ -52,7 +52,7 @@ const StyledSearchPage = styled.div`
 	.searchText-two {
 		display: grid;
     	grid-template: 3fr / 1fr;
-		padding: 1.5rem 0 0;
+		padding: 1.5rem 0 2rem;
 	}
 	.line-two {
         color: #f49612;
@@ -245,17 +245,15 @@ const StyledSearchPage = styled.div`
         border-top: 14px solid green;
     }
 
-    /* ====== BUTTON-BACK ====== */
-    /* .back_to_main {
-        display: flex;
-        justify-content: center;
-    } */
-    /* .back_btn {
-        border: none;
-        cursor: pointer;
-        padding: 1rem 1.5rem;
-        margin: 2rem 0 0;
-        font-size: 1.1rem;
-    } */
+	.search-buttons {
+		min-height: 4rem;
+		padding: 0 3rem 0;
+		display: grid;
+		grid-template: 1fr / 1fr 1fr 1fr;
+		/* grid-template:
+            auto
+            / minmax(6rem, auto) 1fr minmax(6rem, auto); */
+	}
 `;
+
 export default StyledSearchPage;

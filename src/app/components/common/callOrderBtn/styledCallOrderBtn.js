@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledCallOrderBtn = styled.button`
     height: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 0 1.9rem;
     color: var(--colorText);
     background: var(--colorMainBtn);

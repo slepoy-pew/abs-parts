@@ -1,16 +1,16 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import StyledBackButton from "./stylesBackButton";
+
 
 const BackButton = () => {
     const history = useHistory();
     const handleBack = () => history.replace("/");
 
     return (
-        <div className="back_to_main">
-            <button className="back_btn" onClick={() => handleBack()}>
-                НА ГЛАВНУЮ
-            </button>
-        </div>
+		<StyledBackButton onClick={() => handleBack()}>
+            НА ГЛАВНУЮ
+		</StyledBackButton>
     );
 };
 

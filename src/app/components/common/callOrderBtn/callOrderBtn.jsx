@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledCallOrderBtn } from "./stylesCallOrderBtn";
+import StyledCallOrderBtn from "./styledCallOrderBtn";
 
 const CallOrderBtn = () => {
     return (

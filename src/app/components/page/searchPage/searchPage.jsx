@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import StyledSearchPage from "./stylesSearchPage";
+import StyledSearchPage from "./styledSearchPage";
 import api from "../../../api";
 import SearchElements from "../../ui/searchElements";
-import BackButton from "../../common/backButton";
+import BackButton from "../../common/backBtn/backButton";
 import CallOrderBtn from "../../common/callOrderBtn/callOrderBtn";
-import RequestBtn from "../../common/requestBtn/RequestBtn";
+import RequestBtn from "../../common/requestBtn/requestBtn";
+
 
 const SearchPage = () => {
     const [parts, setParts] = useState([]);
@@ -40,10 +41,10 @@ const SearchPage = () => {
 						</span>
 						<span className="line-two">
 							либо Вы можете отправить "ЗАПРОС ПО VIN" и 
-							наш специалисть также ответит Вам.
+							наш специалист также ответит Вам.
 						</span>
 					</div>
-					<div className="search-button">
+					<div className="search-buttons">
 						<BackButton />
 						<CallOrderBtn />
 						<RequestBtn />
